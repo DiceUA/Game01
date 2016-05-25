@@ -42,6 +42,7 @@ public class DangerousCube : MonoBehaviour {
 	
     void Update ()
     {
+        // Show score while in game
         if (!lostGame && !winGame)
             GameObject.Find("ScoreLabel").GetComponent<Text>().text = "Score: " + cubesDodged.ToString() + " / " + winScore.ToString();     
         //Game lost condition
